@@ -15,6 +15,10 @@ html{
     height: 46px;
     background-color: black;
 }
+#nav{
+   display: inline-block;
+}
+
  #nav, .subnav{
     list-style: none;
  }
@@ -43,7 +47,6 @@ html{
 }
 
  #nav li a{
-    
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
@@ -66,10 +69,29 @@ html{
     line-height: 38px;
 }
 
+#nav .nav-arrou-down{
+   font-size: 14px;
+}
+
+#header .search-btn{
+   float: right;
+   padding: 0 21px;
+} 
+
+#header .search-btn:hover{
+   cursor: pointer;
+   background-color: #f44336;
+}
+
+#header .search-icon{
+   color: white;
+   font-size: 20px;
+   line-height: 46px;
+}
 
 #slider{
-    /* smin-height: 500px;
-    background-color: #000; */
+   /* min-height: 500px;
+   background-color: #000; */
 }
 
 #conntent{
