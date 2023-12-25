@@ -98,7 +98,7 @@ html{
    position: relative;
    margin-top: 46px;
    padding-top: 50%;
-   background: url(/assets/img/slider/silder2.jpg) top center / cover no-repeat;
+   background: url(/assets/img/slider/silde1.jpg) top center / cover no-repeat;
 }
 #slider  .text-content{
    position:absolute;
@@ -119,11 +119,43 @@ html{
    font-size: 15px;
 }
 
-#conntent{
-   margin-top: 25px;
+#content{
+   /* margin-top: 25px;
    height: 50000px;
-   background-color:bisque;
+   background-color:darkseagreens; */
 }
+
+#content .content-section{
+   width: 800px;
+   padding: 64px 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#content .section-heading{
+   font-size: 30px;
+   font-weight: 500;
+   letter-spacing: 4px;
+   text-align: center;
+   
+}
+
+#content .section-sub-heading{
+   font-size: 15px;
+   font-style: italic;
+   opacity: 0.6;
+   margin-top: 25px;
+   text-align: center;
+}
+
+
+#content .about-text{
+   font-size: 15px;
+   margin-top: 25px;
+   text-align: justify;
+   line-height: 1.4;
+}
+
 
 #footer{
 
