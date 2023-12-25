@@ -12,8 +12,12 @@ html{
 }
 
 #header{
-    height: 46px;
-    background-color: black;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 46px;
+   background-color: black;
 }
 #nav{
    display: inline-block;
@@ -90,12 +94,12 @@ html{
 }
 
 #slider{
-   /* min-height: 500px;
-   background-color: #000; */
+   margin-top: 46px;
 }
 
 #conntent{
-
+   height: 50000px;
+   background-color:bisque;
 }
 
 #footer{
