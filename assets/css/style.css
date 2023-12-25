@@ -12,6 +12,7 @@ html{
 }
 
 #header{
+   z-index: 1;
    position: fixed;
    top: 0;
    left: 0;
@@ -94,10 +95,32 @@ html{
 }
 
 #slider{
+   position: relative;
    margin-top: 46px;
+   padding-top: 50%;
+   background: url(/assets/img/slider/silder2.jpg) top center / cover no-repeat;
+}
+#slider  .text-content{
+   position:absolute;
+   bottom: 47px;
+   color: white;
+   /* left: 50%;
+   transform: translateX(-50%); */
+   width: 100%;
+   text-align: center;
+}
+
+#slider  .text-heading{
+   font-weight: 500;
+   font-size: 24px;
+}
+
+#slider  .text-discripsiton{
+   font-size: 15px;
 }
 
 #conntent{
+   margin-top: 25px;
    height: 50000px;
    background-color:bisque;
 }
