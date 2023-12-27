@@ -101,7 +101,7 @@
                                 <h3 class="place-heading">Ho Chi Minh</h3>
                                 <p class="place-time">Fri 28 Nov 2023</p>
                                 <p class="place-desc">Arena of Valor World Cup 2023 will take place in Ho Chi Minh City, Vietnam.</p>
-                                <button class="place-buy-btn">Buy Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -111,7 +111,7 @@
                                 <h3 class="place-heading">Ha Noi</h3>
                                 <p class="place-time">Sun 29 Nov 2023</p>
                                 <p class="place-desc">The event is expected to attract thousands of fans from Vietnam and around the world.</p>
-                                <button class="place-buy-btn">Buy Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -121,7 +121,7 @@
                                 <h3 class="place-heading">Da Nang</h3>
                                 <p class="place-time">Fri 27 Nov 2023</p>
                                 <p class="place-desc">The Arena of Valor World Cup is one of the most prestigious esports tournaments in the world.</p>
-                                <button class="place-buy-btn">Buy Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- <div class="clear"></div> -->
@@ -174,9 +174,9 @@
         </div>
     </div>
 
-    <div class="open modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modalContainer">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
 
@@ -209,9 +209,27 @@
     </div>
 
 
+    <script>
+        const buyBtns = document.querySelectorAll(".js-buy-ticket")
+        const modal = document.querySelector(".js-modal")
+        const modalClose = document.querySelector(".js-modal-close")
+        const modalContainer = document.querySelector(".js-modalContainer")
 
-    <!-- <script>
-        const buyBtns = document.querySelectorAll("")
-    </script> -->
+        function showBuyTickets(){
+            modal.classList.add("open")
+        }
+        function hideBuyTickets(){
+            modal.classList.remove("open")
+        }
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener("click", showBuyTickets)
+        }
+        modalClose.addEventListener("click",hideBuyTickets)
+        modal.addEventListener('click',hideBuyTickets)
+        modalContainer.addEventListener('click',function (event){
+            event.stopPropagation()
+        })
+    </script>
+
 </body>
 </html>
