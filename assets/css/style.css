@@ -488,6 +488,50 @@ html{
 .modal-footer a{
    color: #2196F3;
 }
+/*  TABLE LOR */
+
+ 
+.tables-section .content-section .section-heading{
+   font-size: 40px;
+   font-weight: 700;
+   letter-spacing: 4px;
+   text-align: center;
+   margin-top: 48px;
+   margin-bottom: 28px;
+   color: yellow;
+   background-color: rgb(134, 150, 238);
+}
+
+.table-1{
+   border-collapse: collapse;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+
+}
+th{
+   color:yellow;
+   background-color:rgb(134, 150, 238);
+}
+td,th {
+   padding: 30px 60px;
+   border: 1px solid #DDD;
+   text-align: center;
+}
+
+tr:hover {
+   font-weight: bold;
+   color:coral; 
+   background-color:antiquewhite;
+}
+/* td:hover{
+   color:#f44336;
+} */
+
+.tables-section{
+   padding-bottom: 100px;
+}
 
 @keyframes modalFadeIn{
    from{
