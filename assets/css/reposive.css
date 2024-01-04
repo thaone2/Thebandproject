@@ -63,8 +63,16 @@
         height: 560px;
         border-radius: 10px;
     }
+
+    #contact .mobile-contact{
+        width: 100%;
+        padding-bottom: 15px;
+    }
     .contact-form .form-submit-btn{
         padding: 10px 20%;
+    }
+    #footer .social-list {
+        font-size: 30px;
     }
 
 }
