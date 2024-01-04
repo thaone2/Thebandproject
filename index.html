@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Arena of Valor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reposive.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
     <link rel="icon" href="/assets/img/favicon/icon-192x192.png" type="image/x-icon"/> 
 </head>
@@ -38,6 +39,10 @@
             <!-- Begin search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End search button -->
         </div>
@@ -277,7 +282,32 @@
         </div>
     </div>
 
+    <!-- SCRIP FOR RESPOSIVE MOBILE -->
+    <script>
+        var header = document.getElementById("header");
+        var mobileMenu = document.getElementById("mobile-menu");
+        var headerHeight = header.clientHeight;
 
+        // Close and Open Mobile Menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+        // Auto close when choose Menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i<menuItems.length;i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }
+    </script>
+
+    <!-- SCRIP FOR BUY TICKET -->
     <script>
         const buyBtns = document.querySelectorAll(".js-buy-ticket")
         const modal = document.querySelector(".js-modal")
@@ -299,6 +329,6 @@
             event.stopPropagation()
         })
     </script>
-
+    <!-- END SCRIP FOR BUY TICKET -->
 </body>
 </html>

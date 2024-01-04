@@ -61,6 +61,7 @@ html{
 }
 
 #header{
+   width: 100%;
    z-index: 1;
    position: fixed;
    top: 0;
@@ -68,6 +69,7 @@ html{
    right: 0;
    height: 46px;
    background-color: #15213B;
+   overflow: hidden;
 }
 #nav{
    display: inline-block;
@@ -127,20 +129,30 @@ html{
    font-size: 14px;
 }
 
-#header{
-   width: 100%;
-}
-
 #header .search-btn{
    float: right;
    padding: 0 21px; 
 } 
+
+#header .mobile-menu-btn{
+   float: right;
+   padding: 0px 21px; 
+}
 
 #header .search-btn:hover{
    cursor: pointer;
    background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover{
+   background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+   color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon{
    color: white;
    font-size: 20px;
@@ -576,27 +588,4 @@ tr:hover {
       opacity: 1;
       transform: translateY(0);
    } 
-}
-
-
-/* RESPONSIVE */
-/* 
-   PC > 1024px
-   Tablet >= 740px && <1024px
-   Mobile <740px 
-*/
-
-/* PC */
-@media (min-width: 1024px){
-
-}
-
-/* Tablet */
-@media (min-width: 740px) and (max-width:1023px){
-
-}
-
-/* Mobile */
-@media (max-width: 740px){
-
 }
