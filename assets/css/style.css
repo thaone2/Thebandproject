@@ -67,7 +67,7 @@ html{
    left: 0;
    right: 0;
    height: 46px;
-   background-color: black;
+   background-color: #15213B;
 }
 #nav{
    display: inline-block;
@@ -179,7 +179,7 @@ html{
 #content .content-section{
    width: 800px;
    max-width: 100%;
-   padding: 64px 0 112px;
+   padding: 64px 0;
    margin-left: auto;
    margin-right: auto;
    padding-left: 16px;
@@ -238,7 +238,7 @@ html{
 
 /* Tour section */
 .tour-section{
-   background-color: black;
+   background-color: #15213B;
 }
 
 .ticket-list{
@@ -395,11 +395,44 @@ html{
    letter-spacing: 4px;
 }
 
-#footer{
-   padding-bottom: 400px;
-   background-color:#9fa3d7;
-
+#footer {
+   padding: 64px 16px;
+   text-align: center;
+   background-color: #15213B;
+   margin-top: -5px;
 }
+
+#footer .social-list {
+   font-size: 40px;
+   color: #fff;
+}
+
+#footer .social-list > a {
+   color: white;
+   opacity: 0.6;
+   text-decoration: none;
+   letter-spacing: 20px;
+   
+}
+
+#footer .copyright {
+   padding-top: 8px;
+   color: white;
+   opacity: 0.6;
+}
+
+#footer .copyright a {
+   padding: 16px;
+   color: white;
+   opacity: 0.6;
+}
+
+#footer .social-list > a:hover { 
+   opacity: 1;
+   color: #f44336;
+   transition: transform 0.5s ease-in, color 0.5s ease-out;
+}
+
 
 /* Modal */
 .modal{
