@@ -137,6 +137,10 @@ html{
 #header .mobile-menu-btn{
    float: right;
    padding: 0px 21px; 
+   position: absolute;
+   top:0;
+   right: 0;
+   display: none;
 }
 
 #header .search-btn:hover{

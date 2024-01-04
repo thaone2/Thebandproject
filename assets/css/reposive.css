@@ -12,14 +12,18 @@
 @media (min-width: 740px) and (max-width:1023px){}
 /* Mobile */
 @media (max-width: 740px){
+    #nav{
+        display: block;
+    }
     #nav > li{
         display: block;
     }
-    /* #header{
-        position: fixed;
-        z-index: 1;
-        top: 0;
-    } */
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
     #header .search-btn{
         display: none;
     }
