@@ -10,7 +10,8 @@
    clear: both;
 }
 html{
-    font-family: Arial, Helvetica, sans-serif;
+   scroll-behavior: smooth;
+   font-family: Arial, Helvetica, sans-serif;
 } 
 .text-white{
    color: white !important;
@@ -126,9 +127,13 @@ html{
    font-size: 14px;
 }
 
+#header{
+   width: 100%;
+}
+
 #header .search-btn{
    float: right;
-   padding: 0 21px;
+   padding: 0 21px; 
 } 
 
 #header .search-btn:hover{
@@ -152,8 +157,6 @@ html{
    position:absolute;
    bottom: 47px;
    color: white;
-   /* left: 50%;
-   transform: translateX(-50%); */
    width: 100%;
    text-align: center;
 }
@@ -175,9 +178,12 @@ html{
 
 #content .content-section{
    width: 800px;
-   padding: 64px 0;
+   max-width: 100%;
+   padding: 64px 0 112px;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 16px;
+   padding-right: 16px;
 }
 
 #content .section-heading{
@@ -220,24 +226,19 @@ html{
 }
 
 #content .member-img{
-   /* margin-top: 15px;
-   width: 145px;
-   height: 350px;
-   border-radius: 22px; */
    margin-top: 15px;
    width: 145px;
    height: 310px;
    border-radius: 10px;
 }
 #content .member-img:hover{
-   /* opacity: 0.7; */
    border-radius: 20px;
    transform: scale(1.1);
 }
 
 /* Tour section */
 .tour-section{
-   background-color: #000;
+   background-color: black;
 }
 
 .ticket-list{
@@ -245,7 +246,6 @@ html{
    list-style-type: none;
    margin-top: 40px;
    border-radius: 2px;
-   /* display: block; */
 }
 
 .ticket-list li{
@@ -278,10 +278,6 @@ html{
 .places-list{
    margin-top: 32px;
    margin-bottom: 48px;
-   /* margin-left: -8px;
-   margin-right: -8px;
-   margin: 32px -8px 48px; */
-
 }
 /* .place-item{
    float: left;
@@ -295,7 +291,6 @@ html{
 
 .place-img{
    width: 100%;
-   /* height: 50%; */
    display: block;
 }
 
@@ -318,20 +313,19 @@ html{
    font-size: 20px;
    font-weight: 600;
    line-height: 1.4;
-   /* text-align: center; */
 }
 
 .place-time{
    color: #757575;
    margin-top: 15px;
    line-height: 1.4;
-   /* text-align: center; */
    
 }
 .place-desc{
    margin-top: 15px;
    line-height: 1.4;
    text-align: justify;
+   padding: 10px;
 
 }
 .place-buy-btn{
@@ -349,7 +343,6 @@ html{
    font-weight: bold;
    background-color:greenyellow;
 }
-
 
 .map-section img{
    width: 100%;
@@ -394,7 +387,17 @@ html{
    float: right;
 }
 
+#iframe .text-iframe{
+   color: chocolate;
+   font-weight: bold ;
+   text-align: center;
+   padding-bottom: 48px;
+   letter-spacing: 4px;
+}
+
 #footer{
+   padding-bottom: 400px;
+   background-color:#9fa3d7;
 
 }
 
@@ -488,9 +491,10 @@ html{
 .modal-footer a{
    color: #2196F3;
 }
+
 /*  TABLE LOR */
 
- 
+/*  
 .tables-section .content-section .section-heading{
    font-size: 40px;
    font-weight: 700;
@@ -525,13 +529,10 @@ tr:hover {
    color:coral; 
    background-color:antiquewhite;
 }
-/* td:hover{
-   color:#f44336;
-} */
 
 .tables-section{
    padding-bottom: 100px;
-}
+} */
 
 @keyframes modalFadeIn{
    from{
@@ -541,5 +542,28 @@ tr:hover {
    to{
       opacity: 1;
       transform: translateY(0);
-   }
+   } 
+}
+
+
+/* RESPONSIVE */
+/* 
+   PC > 1024px
+   Tablet >= 740px && <1024px
+   Mobile <740px 
+*/
+
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width:1023px){
+
+}
+
+/* Mobile */
+@media (max-width: 740px){
+
 }
