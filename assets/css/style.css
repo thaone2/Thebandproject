@@ -69,7 +69,7 @@ html{
    right: 0;
    height: 46px;
    background-color: #15213B;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 #nav{
    display: inline-block;
