@@ -169,6 +169,7 @@ html{
    padding-top: 50%;
    background: url(/assets/img/slider/silde1.jpg) top center / cover no-repeat;
 }
+
 #slider  .text-content{
    position:absolute;
    bottom: 47px;
@@ -594,3 +595,51 @@ tr:hover {
       transform: translateY(0);
    } 
 }
+
+
+/* phan bat tat bong den */
+.tmngu{
+   padding: 64px 64px;
+   text-align: center;
+   background-color:#6e6e6e;
+   flex-direction: column;   
+   margin-top: -4px;
+}
+
+#myImage .light-img{
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.turnOff-light,
+.turnOn-light{
+   margin-top: 10px;
+    display: flex;
+    padding: 12px 30px;
+    width: 20%;
+    border-radius: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #009688;
+    font-size: 20px;
+    color: #2196F3;
+    font-weight: bold;
+    justify-content: center;
+
+}
+.turnOn-light:hover{
+   background-color: orange;
+}
+
+.turnOff-light:hover{
+   background-color: orange;
+}
+
+#myImage-btn.turnOn-background {
+   background-color: rgb(238, 238, 90); /* Màu nền khi bật đèn */
+ }
+
+
+
+

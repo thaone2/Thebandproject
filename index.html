@@ -231,8 +231,16 @@
             <iframe src="/assets/img/places/Na.jpg" height="500px" width="100%" title="Iframe Example"></iframe>
         </div> -->
 
+        <!-- class xam 2 -->
+        <div id="myImage-btn" class="tmngu">
+            <img id="myImage" class="light-img" src="/assets/img/light/pic_bulboff.gif" alt="">
+            <button class="turnOn-light">TURN ON</button>
+            <button class="turnOff-light">TURN OFF</button>
+        </div>
+        <!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+            <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button> -->
         
-
         <div id="footer">
             <div class="social-list">
                 <a href="https://www.facebook.com/" target="_blank"><i class="ti-facebook"></i></a>
@@ -339,5 +347,32 @@
         })
     </script>
     <!-- END SCRIP FOR BUY TICKET -->
+    
+    <script>
+        const turnOnBtn = document.querySelector(".turnOn-light");
+        const turnOffBtn = document.querySelector(".turnOff-light");
+        const myImage = document.getElementById("myImage");
+        const myImageBtn = document.getElementById("myImage-btn");
+      
+        function toggleLight(state) {
+          if (state === 'on') {
+            myImage.src = "/assets/img/light/pic_bulbon.gif";
+            myImageBtn.classList.add("turnOn-background");
+          } else {
+            myImage.src = "/assets/img/light/pic_bulboff.gif";
+            myImageBtn.classList.remove("turnOn-background");
+          }
+        }
+      
+        turnOnBtn.addEventListener("click", function() {
+          toggleLight('on');
+        });
+      
+        turnOffBtn.addEventListener("click", function() {
+          toggleLight('off');
+        });
+      </script>
+      
+
 </body>
 </html>

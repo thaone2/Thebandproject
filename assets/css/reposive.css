@@ -80,4 +80,10 @@
         font-size: 30px;
     }
 
+    .turnOff-light,
+    .turnOn-light{
+        font-size: 11px;
+        text-align: center;
+        justify-content: center;
+    }
 }
