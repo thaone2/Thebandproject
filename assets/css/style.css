@@ -604,6 +604,7 @@ tr:hover {
    background-color:#6e6e6e;
    flex-direction: column;   
    margin-top: -4px;
+   width: 100%;
 }
 
 #myImage .light-img{
@@ -615,29 +616,32 @@ tr:hover {
 .turnOff-light,
 .turnOn-light{
    margin-top: 10px;
-    display: flex;
-    padding: 12px 30px;
-    width: 20%;
-    border-radius: 33px;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: #009688;
-    font-size: 20px;
-    color: #2196F3;
-    font-weight: bold;
-    justify-content: center;
+   display: flex;
+   padding: 12px 30px;
+   width: 20%;
+   border-radius: 33px;
+   margin-left: auto;
+   margin-right: auto;
+   border-color: #009688;
+   font-size: 20px;
+   color: #fff;
+   font-weight: bold;
+   justify-content: center;
+   background-color: #000;
 
 }
 .turnOn-light:hover{
-   background-color: orange;
+   background-color: greenyellow;
 }
 
 .turnOff-light:hover{
-   background-color: orange;
+   background-color: rgb(230, 6, 6);
 }
 
 #myImage-btn.turnOn-background {
-   background-color: rgb(238, 238, 90); /* Màu nền khi bật đèn */
+   background-color: rgb(238, 238, 90);
+   /* background-image: url(/assets/img/map/5.jpg); */
+   width: 100%;
  }
 
 
